@@ -1,6 +1,7 @@
 import {cart} from '../data/cart.js'
 import {products} from '../data/products.js'
 import { addToCart } from '../data/cart.js';
+import { formatCurrency } from './utils/money.js';
 
 let productsHTML='';
 
@@ -26,7 +27,7 @@ products.forEach((product)=>{ //saves the items in the array in product.
           </div>
 
           <div class="product-price">
-            ${(product.priceCents/100).toFixed(2)} <!--to show a no with 2 decimals-->
+            ${formatCurrency(product.priceCents/100)} <!--to show a no with 2 decimals-->
           </div>
 
           <div class="product-quantity-container">
