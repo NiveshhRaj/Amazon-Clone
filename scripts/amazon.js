@@ -27,7 +27,7 @@ products.forEach((product)=>{ //saves the items in the array in product.
           </div>
 
           <div class="product-price">
-            ${formatCurrency(product.priceCents/100)} <!--to show a no with 2 decimals-->
+            ${formatCurrency(product.priceCents)} <!--to show a no with 2 decimals-->
           </div>
 
           <div class="product-quantity-container">
