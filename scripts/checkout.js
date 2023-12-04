@@ -32,13 +32,12 @@ function renderOrderSummary(){
         deliveryOption=option;
       }
     });
-    
-    
+
     cartSummaryHTML += `
       <div class="cart-item-container
         js-cart-item-container-${matchingProduct.id}">
         <div class="delivery-date">
-          Delivery date: JUNE 21 <!--save data and generate html for delivery options-->
+          Delivery date: Monday,Dec 11 <!--save data and generate html for delivery options-->
         </div>
 
         <div class="cart-item-details-grid">
@@ -142,5 +141,5 @@ function renderOrderSummary(){
           renderOrderSummary();
         });
       });
-}
+  }
 renderOrderSummary();
